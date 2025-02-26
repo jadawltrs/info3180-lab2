@@ -1,0 +1,39 @@
+{%extends "base.html"%}
+{%block title%}Profile{%endblock%}
+
+
+{%block main%}
+
+    <div class="profile-top">
+        <img src="{{ url_for('static', filename='photo.jpg')}}" alt="Avatar" class="avatar">
+        <h1>{{name}}</h1>
+        <p>@jadawltrs</p>
+        <p>Kingston, Jamaica</p>
+        <p>Joined {{date_joined}}</p>
+    </div>
+    <div class="profile-bottom">
+        <p style="padding: 10px;">
+            Hi, I'm Jada! I am a 3rd Year Computer Science student at the University of the West Indies, Mona. 
+            I am passionate about technology and I love to code. I am also a member of the Computing Subcommittee as the 3rd year Representative. 
+            I am currently learning web development, cybersecurity, and data science, all of which I enjoy very much.
+        </p>
+        <div style="align-items: center;">
+            <ul class="stats">
+                <li>
+                    <h3>3</h3>
+                    <p>Posts</p>
+                </li> 
+                <li>
+                    <h3>359</h3>
+                    <p>Followers</p>
+                </li> 
+                <li>
+                    <h3>761</h3>
+                    <p>Following</p>
+                </li> 
+            </ul>
+        </div>
+        <button class="btn">Follow</button>
+    </div>
+
+{%endblock%}
